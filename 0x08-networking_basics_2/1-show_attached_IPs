@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+# Displays all active IPv4 addresses on the machine it’s executed on
+
+ip -f inet addr | grep -oP "(?<=inet )[^\/]*"
